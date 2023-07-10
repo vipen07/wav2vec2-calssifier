@@ -1,0 +1,14 @@
+jiwer
+torchaudio
+librosa
+accelerate
+numpy==1.23.1
+pandas
+transformers
+torch
+datasets
+ipython
+entrypoints
+wandb
+tqdm
+jax

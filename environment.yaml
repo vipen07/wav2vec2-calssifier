@@ -1,0 +1,13 @@
+name: venv-wav2vec2-emotion-recognition
+
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.11
+  - pip
+  - pip:
+    - --index-url=https://pypi.org/simple
+    - --extra-index-url=${PIP_EXTRA_INDEX_URL}
+    - --trusted-host=pypi.org
+    - -r requirements.txt
