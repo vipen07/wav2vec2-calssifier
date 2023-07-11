@@ -20,6 +20,7 @@ pretrained_path = "/data/ganji_sreeram/Interns/Vipendra:Emotion_Recognition/Wav2
 
 #train
 test_accuracy=0
+#No. of validation = 3 so range(1,4)
 for i in range(1,4):
     #path to each exp files in which you want to store each exps result
     path_to_each_exp = path_to_exp_files+f"/Exp-{i}"
