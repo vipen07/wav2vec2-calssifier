@@ -554,11 +554,12 @@ class Wav2vec2Classifier(DataCollatorCTCWithPadding,SpeechClassifierOutput,Wav2V
         trainer.train()
         # Save the fine-tuned model and tokenizer
         from transformers import AutoTokenizer
-        trainer.save_model(f"{path_to_store_finetuned}/finetuned-10")
+        trainer.save_model(path_to_store_finetuned)
         tokenizer = AutoTokenizer.from_pretrained(pretrained_path)
-        tokenizer.save_pretrained(f"{path_to_store_finetuned}/finetuned-10")
+        tokenizer.save_pretrained(path_to_store_finetuned)
         # Return the path of the fine-tuned model
-        return f"{path_to_store_finetuned}/finetuned-10"
+        return path_to_store_finetuned
+
 
 
 
